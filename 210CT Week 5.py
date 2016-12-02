@@ -25,6 +25,19 @@ def longestSubSequence(n):
     
 print(longestSubSequence([1,2,3,4,1,6,1,7,8,1,2,3,4,5,6,7]))
 
+###Doesn't work as it should
+##def remove (self,n):
+##    if n.prev != None:
+##        n.prev.next = n.next
+##    else:
+##        self.head = n.next
+##
+##    if n.next  != None:
+##        n.next.prev = n.prev
+##            
+##    else:
+##        self.tail = n.prev
+
 
 
 
