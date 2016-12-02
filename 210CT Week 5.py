@@ -24,6 +24,8 @@ def longestSubSequence(n):
     return(longestSeqFound)
     
 print(longestSubSequence([1,2,3,4,1,6,1,7,8,1,2,3,4,5,6,7]))
+print("\n------------\n")
+print(longestSubSequence([1,2,3,4,1,5,1,6,7])
 
 ###Doesn't work as it should
 ##def remove (self,n):
