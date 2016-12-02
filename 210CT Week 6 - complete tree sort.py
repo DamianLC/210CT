@@ -39,17 +39,17 @@ def in_order(tree):
         in_order(tree.right)
 
 def inOrder(tree):
-        stack = []
-        currentNode = tree
-        #while True:
-        while currentNode != None:
-            stack.append(currentNode)
-            currentNode = currentNode.left
-        if len(stack) == 0:
+        stack = []      
+        currentNode = tree      #current node of the tree
+        while True:     #the loop will always run until it has gone through the entire tree
+            while currentNode != None: #until the node is not equal to node it will append the value of the current to the stack
+                stack.append(currentNode) 
+                currentNode = currentNode.left #moves to the left side of the tree
+            if len(stack) == 0:  #when the length of the stack is 0 it has traversed the entire tree and breaks out of the loop
                 break
-        currentNode = stack.pop()
-        print (currentNode.value)
-        currentNode = currentNode.right
+            currentNode = stack.pop()       #pops the value that is at the top of the stack, also backtracks through the stack
+            print (currentNode.value)
+            currentNode = currentNode.right     #sets the node to go to the right
                 
 if __name__ == '__main__':
    
