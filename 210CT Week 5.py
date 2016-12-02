@@ -7,7 +7,7 @@ def longestSubSequence(n):
     for i in range(len(n)):
 
         if i < len(n)-1 and n[i] < n[i+1]: #if the index which i is currently on is smaller than the length of the sequence 
-            currentSeq.append(n[i])        #and the number is smaller than next one it will append that number to the list
+            currentSeq.append(n[i])        #and the number is smaller than  the next one it will append that number to the list
             #print(currentSeq)
             
 
